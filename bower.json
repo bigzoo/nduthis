@@ -1,0 +1,21 @@
+{
+  "name": "nduthis",
+  "description": "An uber clone for Kenyan motorcycles.",
+  "main": "",
+  "authors": [
+    "Chris Nyaga <nyagachris75@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bigzoo/nduthis",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "auth0-lock": "9.2.3",
+    "jsrsasign": "jsrsasign#5.0.1"
+  }
+}
