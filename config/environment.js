@@ -16,7 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase: {
+      apiKey: "AIzaSyDY97tdvjz7u-59EBWjwtOjLwDFWtaXXA0",
+      authDomain: "nduthis-24c17.firebaseapp.com",
+      databaseURL: "https://nduthis-24c17.firebaseio.com",
+      projectId: "nduthis-24c17",
+      storageBucket: "",
+      messagingSenderId: "500591377581"
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
