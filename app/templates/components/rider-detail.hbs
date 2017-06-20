@@ -1,3 +1,11 @@
 Name: {{rider.name}}
 <br>
-<img src={{rider.photoUrl}} alt="Bikers photo">
+<img src= {{rider.photoUrl}} alt="Bikers photo">
+<br>
+{{#if inRide}}
+  <label for="to">Where To?</label> {{input type="text" class="form-control" id="to" value=to placeholder="Enter Your Destination"}}
+  <button class="btn btn-submit" {{action 'newRide'}}>Submit Ride</button>
+  <button class="btn btn-submit" {{action 'cancel'}}>Cancel</button>
+{{else}}
+  <button class="btn btn-submit" {{action 'showNewRide' rider}}>Schedule Ride</button>
+{{/if}}

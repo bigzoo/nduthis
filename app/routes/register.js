@@ -7,7 +7,6 @@ export default Ember.Route.extend({
       newUser.save();
     },
     registerNewRider(params){
-      console.log(params);
       var newRider = this.store.createRecord('rider', params);
       newRider.save();
     }
