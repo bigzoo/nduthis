@@ -2,9 +2,7 @@
   <nav>
     <ul>
       <li>
-        <a href="/">
-        <img src="img/Logo2.png">
-      </a>
+        {{#link-to 'index'}}<img src="img/Logo2.png">{{/link-to}}
       </li>
       <li>
         {{#if session.isAuthenticated}}
