@@ -4,6 +4,7 @@ body {
   font-size: 18px;
 }
 
+
 .navbar {
   border-bottom: 1px solid #808182;
   padding: 4px;
@@ -27,13 +28,16 @@ body {
 .navbar a {
   text-decoration: none;
 }
-h1{
+
+h1 {
   text-align: center;
 }
-h2{
+
+h2 {
   text-align: center;
 }
-.signup{
+
+.signup {
   background-color: #15c10f;
   float: right;
 }
@@ -41,28 +45,50 @@ h2{
 ul {
   list-style-type: none;
 }
-li{
+
+li {
   display: inline;
 }
-.info{
+
+.info {
   float: right;
 }
-footer{
+
+footer {
   text-align: center;
   padding-top: 300px;
 }
-#foot{
+
+#foot {
   padding-right: 50px;
 }
 
+
 /*carousel display size*/
+
 .carousel .item {
-  height: 500px;
+  height: 400px;
 }
 
 .item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 500px;
+  position:relative;
+  top:0;
+  left: 0;
+  min-height: 500px;
+}
+
+/*Welcome-txt*/
+.welcome-txt{
+  font-family: 'Monda', sans-serif;
+  padding:10px 20px;
+  position: relative;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+}
+
+.welcome-txt h1{
+  font-size: 55px;
+}
+.form-actions{
+  text-align: center;
 }
