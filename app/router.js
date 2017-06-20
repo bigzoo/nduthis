@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('protected');
   this.route('register');
   this.route('book', function() {
-    this.route('rider');
+    this.route('rider', {path:'/rider/:rider_id'});
   });
 });
 
