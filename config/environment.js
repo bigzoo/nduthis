@@ -52,8 +52,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-
-
+  
   ENV['ember-simple-auth'] = {
     authenticationRoute: 'index',
     routeAfterAuthentication: 'protected',

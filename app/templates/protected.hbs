@@ -1,1 +1,7 @@
 <h2>Example of protected route that requires the user to be authenticated.</h2>
+<h2>This is where the specific user stuff is.</h2>
+{{#if session.data.authenticated.profile.email_verified}}
+Your email is verified
+{{else}}
+Your email is not verified
+{{/if}}
