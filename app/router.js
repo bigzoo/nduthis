@@ -10,7 +10,9 @@ Router.map(function() {
   this.route('login');
   this.route('protected');
   this.route('register');
-  this.route('book');
+  this.route('book', function() {
+    this.route('rider');
+  });
 });
 
 export default Router;
