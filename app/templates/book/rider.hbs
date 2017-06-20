@@ -1,1 +1,6 @@
+{{#if isShowingModal}}
+  {{#modal-dialog translucentOverlay=true close='closeModalDialog' }}
+    {{rider-detail rider=model}} {{modalMessage}}
+  {{/modal-dialog}}
+{{/if}}
 {{outlet}}

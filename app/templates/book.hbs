@@ -1,4 +1,6 @@
-{{#each model as |rider|}}
-{{rider.name}}
-{{/each}}
 {{outlet}}
+<ul>
+  {{#each model as |rider|}}
+    {{rider-tile rider=rider}}
+  {{/each}}
+</ul>
