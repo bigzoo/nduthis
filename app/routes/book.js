@@ -16,19 +16,3 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     })
   }
 });
-//
-//
-// model() {
-//      return Ember.RSVP.hash({
-//        rentals: this.store.findAll('rental'),
-//        reviews: this.store.findAll('review')
-//      });
-//
-//
-//
-//    }  model: function() {
-//     return this.store.query('rider', {
-//       orderBy: 'status',
-//       equalTo: 'available'
-//     });
-//   }
