@@ -7,10 +7,12 @@
     <label for="formGroupExampleInput">Full Names</label>
     {{input type="text" class="form-control" id="name" value=name placeholder="Enter your full names"}}
   </div>
-  <div class="form-group">
+  <fieldset disabled>
+    <div class="form-group">
     <label for="formGroupExampleInput">Email address</label>
-    {{input type="email" class="form-control" id="email" value=email }}
+    {{input type="email" class="form-control" id="email" value=session.data.authenticated.profile.email }}
   </div>
-
+  </fieldset>
+  <button class="btn btn-submit" {{action 'newUser'}}>Register</button>
 </form>
 {{yield}}
