@@ -37,9 +37,20 @@ h2{
   background-color: #15c10f;
   float: right;
 }
+
 ul {
   list-style-type: none;
 }
 li{
   display: inline;
+}
+.info{
+  float: right;
+}
+footer{
+  text-align: center;
+  padding-top: 300px;
+}
+#foot{
+  padding-right: 50px;
 }

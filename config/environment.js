@@ -53,6 +53,7 @@ module.exports = function(environment) {
 
   }
 
+
   ENV['ember-simple-auth'] = {
     authenticationRoute: 'index',
     routeAfterAuthentication: 'protected',
