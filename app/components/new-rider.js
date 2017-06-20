@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  session: Ember.inject.service(),
   addNewRider: false,
   actions:{
     addNewRider(){
@@ -22,7 +23,7 @@ export default Ember.Component.extend({
       this.set('addNewRider',false)
     },
     newRider(){
-      var params = [
+      var params = {
         idNumber: this.get('idNumber'),
         name: this.get('name'),
         email: this.get('session.data.authenticated.profile.email'),
@@ -31,8 +32,9 @@ export default Ember.Component.extend({
         photoUrl: this.get('photoUrl'),
         location: "",
         status: "busy"
-      ];
-      console.log(params);
+      };
+      this.sendAction('registerNewRider',params);
+      this.set('addNewRider',false);
     }
   }
 });
