@@ -79,6 +79,7 @@ footer {
 
 /*Welcome-txt*/
 .welcome-txt{
+  background-color: rgba(40, 96, 154,0.9);
   font-family: 'Monda', sans-serif;
   padding:10px 20px;
   position: relative;
