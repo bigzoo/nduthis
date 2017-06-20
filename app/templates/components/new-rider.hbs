@@ -1,1 +1,36 @@
+{{#if addNewRider}}
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">National ID</label>
+    {{input type="number" class="form-control" id="id" value=id placeholder="Enter your ID NO"}}
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Full Names</label>
+    {{input type="text" class="form-control" id="name" value=name placeholder="Enter your full names"}}
+  </div>
+  <fieldset disabled>
+    <div class="form-group">
+    <label for="formGroupExampleInput">Email address</label>
+    {{input type="email" class="form-control" id="email" value=session.data.authenticated.profile.email }}
+  </div>
+  </fieldset>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Phone No</label>
+    {{input type="number" class="form-control" id="phoneNo" value=phoneNo placeholder="Enter your phone No"}}
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Bike Plates</label>
+    {{input type="text" class="form-control" id="plates" value=plates placeholder="Enter your bike plates"}}
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Photo URL</label>
+    {{input type="text" class="form-control" id="photoUrl" value=photoUrl placeholder="Enter a url of your bikes photo"}}
+  </div>
+  <button class="btn btn-submit" {{action 'newRider'}}>Register</button>
+  <button class="btn btn-submit" {{action 'resetForm'}}>Reset form</button>
+  <button class="btn btn-submit" {{action 'cancelForm'}}>Cancel</button>
+</form>
+{{else}}
+  <button class="btn btn-submit" {{action 'addNewRider'}}>Register as a rider</button>
+{{/if}}
 {{yield}}
