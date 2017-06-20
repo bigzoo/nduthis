@@ -4,7 +4,6 @@ body {
   font-size: 18px;
 }
 
-
 .navbar {
   border-bottom: 1px solid #808182;
   padding: 4px;
@@ -71,25 +70,69 @@ footer {
 }
 
 .item img {
-  position:relative;
-  top:0;
+  position: relative;
+  top: 0;
   left: 0;
   min-height: 500px;
 }
 
+
 /*Welcome-txt*/
-.welcome-txt{
-  background-color: rgba(40, 96, 154,0.9);
+
+.welcome-txt {
+  background-color: rgba(40, 96, 154, 0.9);
   font-family: 'Monda', sans-serif;
-  padding:10px 20px;
+  padding: 10px 20px;
   position: relative;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
 }
 
-.welcome-txt h1{
+.welcome-txt h1 {
   font-size: 55px;
 }
-.form-actions{
+
+.form-actions {
   text-align: center;
+}
+
+
+/*REGISTER*/
+
+.reg-head {
+  ;
+  padding: 20px 20px;
+  color: white;
+  background-color: rgb(19, 87, 150);
+}
+
+.reg-head h1 {
+  font-size: 40px;
+  font-family: 'Monda', sans-serif;
+}
+
+.reg-rider {
+  font-family: 'Monda', sans-serif;
+  color: white;
+  background-color: rgba(40, 96, 154, 0.9);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+  padding: 80px 20px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.reg-user {
+  font-family: 'Monda', sans-serif;
+  color: white;
+  padding: 80px 20px;
+  background-color: rgba(40, 96, 154, 0.9);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+  text-align: center;
+}
+
+.reg-button {
+  font-family: 'Monda', sans-serif;
+  padding: 10px 50px;
+  font-size: 20px;
 }
