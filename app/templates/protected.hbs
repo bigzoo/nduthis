@@ -2,6 +2,9 @@
 <h2>This is where the specific user stuff is.</h2>
 {{#if session.data.authenticated.profile.email_verified}}
 Your email is verified
+<a href="#" {{action 'register'}}>Proceed with registration</a>
 {{else}}
 Your email is not verified
+<br>
+Please first verify you email and log back into your account to proceed with registration.
 {{/if}}
