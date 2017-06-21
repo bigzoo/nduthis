@@ -1,10 +1,40 @@
+<<<<<<< HEAD
 <h1 id="title">Welcome to Nduthis</h1>
+=======
+<div class="container-fluid navbar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/">
+        <img src="img/Logo2.png">
+      </a>
+      </li>
+      <li>
+        {{#if session.isAuthenticated}}
+          <h3>You are currently logged as: {{session.data.authenticated.profile.email}}</h3>
+          <a href="#" {{action 'logout'}}>Logout</a>
+        {{else}}
+          <a href="#" {{action 'login'}}>Login</a>
+        {{/if}}
+      </li>
+    </ul>
+  </nav>
+</div>
+{{outlet}}
 
-<header>
-  {{#if session.isAuthenticated}}
-    <h3>You are currently logged as: {{session.data.authenticated.profile.email}}</h3>
-    <a href="#" {{action 'logout'}}>Logout</a>
-  {{/if}}
-</header>
+<h1> WELCOME TO NDUTHIS </h1>
+>>>>>>> 4918abae2445c565e0046915cf2eb9ad77225a9a
+
+<h2> Your adventure is one click away. Let's Nduthis!!!</h2>
 
 {{outlet}}
+
+<footer>
+  <p> Copyright The Nduthis Team </p>
+  <ul id="foot">
+    <li><img src="img/rsz_fb2.png"></li>
+    <li><img src="img/rsz_git.png"></li>
+    <li><img src="img/rsz_insta.png"></li>
+    <li><img src="img/rsz_twt.png"></li>
+  </ul>
+</footer>
