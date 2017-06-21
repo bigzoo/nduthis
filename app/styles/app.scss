@@ -1,0 +1,265 @@
+<<<<<<< HEAD:app/styles/app.css
+  @import url('https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway');
+  body {
+    font-family: 'Raleway';
+    font-size: 18px;
+  }
+
+  .navbar {
+    border-bottom: 1px solid #808182;
+    padding: 4px;
+    box-shadow: 0px 1px 2px #ffe6e6;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar img {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .main {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .signup {
+    background-color: #15c10f;
+    float: right;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .info {
+    float: right;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 300px;
+  }
+
+  #foot {
+    padding-right: 50px;
+  }
+
+  .link {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: bold;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 400px;
+  }
+
+  .item img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
+  /*Welcome-txt*/
+
+  .welcome-txt {
+    background-color: rgba(40, 96, 154, 0.9);
+    font-family: 'Monda', sans-serif;
+    padding: 10px 20px;
+    position: relative;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+  }
+
+  .welcome-txt h1 {
+    font-size: 55px;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+  /*REGISTER*/
+
+  .reg-head {
+    ;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgb(19, 87, 150);
+  }
+
+  .reg-head h1 {
+    font-size: 40px;
+    font-family: 'Monda', sans-serif;
+  }
+
+  .reg-rider {
+    font-family: 'Monda', sans-serif;
+    color: white;
+    background-color: rgba(40, 96, 154, 0.9);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+    padding: 80px 20px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .reg-user {
+    font-family: 'Monda', sans-serif;
+    color: white;
+    padding: 80px 20px;
+    background-color: rgba(40, 96, 154, 0.9);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+    text-align: center;
+  }
+
+  .reg-button {
+    font-family: 'Monda', sans-serif;
+    padding: 10px 50px;
+    font-size: 20px;
+  }
+=======
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+@import "ember-bootstrap/bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
+
+//Font variables
+$Raleway: 'Raleway';
+
+.ember-modal-dialog{
+  width: 400px;
+  height: 300px;
+}
+.navbar {
+  border-bottom: 1px solid #808182;
+  padding: 4px;
+  box-shadow: 0px 1px 2px #ffe6e6;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar img {
+  height: 70px;
+  width: 80px;
+}
+
+.main {
+  padding: 50px;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.signup {
+  background-color: #15c10f;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.info {
+  float: right;
+}
+
+footer {
+  text-align: center;
+  padding-top: 300px;
+}
+
+#foot {
+  padding-right: 50px;
+}
+.about {
+  height: 250px;
+  border: 1px solid #808182;
+  margin-top: 10px;
+  box-shadow: 2px 5px 5px 2px;
+}
+h4{
+  text-decoration-line: underline;
+}
+h2{
+  text-align: center;
+}
+.registration{
+  text-align: center;
+}
+/*carousel display size*/
+
+.carousel .item {
+  height: 400px;
+}
+
+.item img {
+  position:relative;
+  top:0;
+  left: 0;
+  min-height: 500px;
+}
+
+/*Welcome-txt*/
+.welcome-txt{
+  background-color: rgba(40, 96, 154,0.9);
+  font-family: 'Monda', sans-serif;
+  padding:10px 20px;
+  position: relative;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+}
+
+.welcome-txt h1{
+  font-size: 55px;
+}
+.form-actions{
+  text-align: center;
+}
+
+.gif{
+  display: inline-block;
+  padding-left: 380px;
+}
+>>>>>>> 17796fb436c42fd245dfeaf860e97029a1ca90bb:app/styles/app.scss

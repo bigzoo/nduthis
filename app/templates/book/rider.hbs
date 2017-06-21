@@ -1,0 +1,9 @@
+{{#if isShowingModal}}
+  {{#modal-dialog translucentOverlay=true close='closeModalDialog' }}
+    {{#each model.user as |user|}}
+    {{rider-detail rider=model.rider newRide="newRide" user=user}}
+    {{/each}}
+
+  {{/modal-dialog}}
+{{/if}}
+{{outlet}}

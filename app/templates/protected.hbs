@@ -1,7 +1,16 @@
-<h2>Example of protected route that requires the user to be authenticated.</h2>
-<h2>This is where the specific user stuff is.</h2>
+<h2>Congratulations you are one step closer to starting your journey!!!</h2>
+<div class="container gif">
+  <img src="https://media.giphy.com/media/QZEdQgrlgOjcY/giphy.gif">
+</div>
+
+<br>
+<div class="container registration">
 {{#if session.data.authenticated.profile.email_verified}}
 Your email is verified
+{{link-to "Proceed with registration" 'register'}}
 {{else}}
 Your email is not verified
+<br>
+Please first verify you email and log back into your account to proceed with registration.
 {{/if}}
+</div>

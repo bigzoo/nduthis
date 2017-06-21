@@ -1,0 +1,7 @@
+<li>
+  {{#link-to "book.rider" rider.id user=user}}
+    {{rider.name}}
+    <img src={{rider.photoUrl}} alt="Photo of riders bike">
+  {{/link-to}}
+</li>
+{{yield}}
