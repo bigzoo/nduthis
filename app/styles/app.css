@@ -53,13 +53,43 @@ li {
   float: right;
 }
 
+
+/*Footer*/
+
 footer {
+  padding: 20px 20px;
+  color: white;
   text-align: center;
-  padding-top: 300px;
+  background-color: rgb(19, 87, 150);
 }
 
-#foot {
-  padding-right: 50px;
+.foot-logo h3 {
+  font-family: 'Monda', sans-serif;
+  font-size: 30px;
+}
+
+.foot-logo img {
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.social-icons a {
+  color: white;
+  padding: 10px 10px;
+  background-color: rgb(19, 87, 150);
+}
+
+.social-icons a :hover {
+  color: rgb(19, 87, 150);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.horizontal-foot {
+  width: 50%;
 }
 
 
