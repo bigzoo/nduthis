@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('book', function() {
     this.route('rider', {path:'/rider/:rider_id'});
   });
+  this.route('dashboard');
 });
 
 export default Router;
