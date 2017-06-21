@@ -62,8 +62,15 @@ footer {
 #foot {
   padding-right: 50px;
 }
-
-
+.about {
+  height: 250px;
+  border: 1px solid #808182;
+  margin-top: 10px;
+  box-shadow: 2px 5px 5px 2px;
+}
+h4{
+  text-decoration-line: underline;
+}
 /*carousel display size*/
 
 .carousel .item {
