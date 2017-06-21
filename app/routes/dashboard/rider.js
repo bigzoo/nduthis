@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   session: Ember.inject.service(),
   model() {
     return Ember.RSVP.hash({
-      user: this.store.query('rider', {
+      rider: this.store.query('rider', {
         orderBy: 'email',
         equalTo: this.get('session.data.authenticated.profile.email')
       })
