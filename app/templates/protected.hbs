@@ -3,6 +3,11 @@
 {{#if session.data.authenticated.profile.email_verified}}
 Your email is verified
 {{link-to "Proceed with registration" 'register'}}
+<br>
+{{link-to "Book A Nduthi" 'book'}}
+<br>
+{{link-to "User Dashboard" 'dashboard.user'}}
+<br>
 {{else}}
 Your email is not verified
 <br>
