@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   isShowingModal: true,
+  session: Ember.inject.service(),
   actions:{
     closeModalDialog(){
       this.set('isShowingModal', false)

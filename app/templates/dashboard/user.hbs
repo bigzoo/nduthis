@@ -1,0 +1,23 @@
+{{outlet}}
+<h1>This is {{#each model.user as |user|}}{{user.name}}{{/each}}'s Dashboard</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Where To</th>
+      <th>Rider Name</th>
+      <th>Rider email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model.user as |user|}}
+      {{#each user.rides as |ride|}}
+        <tr>
+
+          <td>{{ride.to}}</td>
+          <td>{{ride.rider.name}}</td>
+          <td>{{ride.rider.email}}</td>
+        </tr>
+      {{/each}}
+    {{/each}}
+  </tbody>
+</table>
