@@ -10,6 +10,7 @@ $Raleway: 'Raleway';
   width: 400px;
   height: 300px;
 }
+
 .navbar {
   border-bottom: 1px solid #808182;
   padding: 4px;
@@ -126,4 +127,64 @@ h2{
   top: 0px;
   font-size: 30px;
   font-style: normal;
+}
+
+body {
+font-family: $Raleway;
+font-size: 18px;
+}
+
+.navbar {
+border-bottom: 1px solid #808182;
+padding: 4px;
+box-shadow: 0px 1px 2px #ffe6e6;
+}
+
+.navbar {
+text-align: center;
+}
+
+.navbar img {
+height: 70px;
+width: 80px;
+}
+
+.main {
+padding: 50px;
+text-align: center;
+}
+
+.navbar a {
+text-decoration: none;
+}
+h1{
+text-align: center;
+}
+h2{
+text-align: center;
+}
+.signup{
+background-color: #15c10f;
+float: right;
+}
+
+ul {
+list-style-type: none;
+}
+
+li{
+display: inline;
+}
+
+.info{
+float: right;
+}
+
+footer{
+text-align: center;
+padding-top: 300px;
+}
+
+#foot{
+padding-right: 50px;
 }

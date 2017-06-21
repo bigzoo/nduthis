@@ -13,6 +13,9 @@ Router.map(function() {
   this.route('book', function() {
     this.route('rider', {path:'/rider/:rider_id'});
   });
+  this.route('dashboard', function() {
+    this.route('user');
+  });
 });
 
 export default Router;
