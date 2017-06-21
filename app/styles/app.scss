@@ -1,7 +1,7 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
 @import "ember-bootstrap/bootstrap";
-@import url[https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway];
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
 
 //Font variables
 $Raleway: 'Raleway';
@@ -76,6 +76,12 @@ footer {
 h4{
   text-decoration-line: underline;
 }
+h2{
+  text-align: center;
+}
+.registration{
+  text-align: center;
+}
 /*carousel display size*/
 
 .carousel .item {
@@ -104,4 +110,9 @@ h4{
 }
 .form-actions{
   text-align: center;
+}
+
+.gif{
+  display: inline-block;
+  padding-left: 380px;
 }
