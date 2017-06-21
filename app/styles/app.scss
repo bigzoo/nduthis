@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway');
-body {
-  font-family: 'Raleway';
-  font-size: 18px;
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+@import "ember-bootstrap/bootstrap";
+@import url[https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway];
+
+//Font variables
+$Raleway: 'Raleway';
+
+.ember-modal-dialog{
+  width: 400px;
+  height: 300px;
 }
-
-
 .navbar {
   border-bottom: 1px solid #808182;
   padding: 4px;

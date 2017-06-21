@@ -1,0 +1,8 @@
+{{outlet}}
+{{#each model.user as |user|}}
+  <ul>
+    {{#each model.riders as |rider|}}
+      {{rider-tile rider=rider user=user}}
+    {{/each}}
+  </ul>
+{{/each}}
