@@ -1,11 +1,6 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
 @import "ember-bootstrap/bootstrap";
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
-<<<<<<< HEAD
-=======
-
->>>>>>> 5f45635d9431d7393a421a8654dd7460e0e8c2fa
 //Font variables
 $Raleway: 'Raleway';
 
@@ -13,7 +8,6 @@ $Raleway: 'Raleway';
   width: 400px;
   height: 300px;
 }
-<<<<<<< HEAD
 
 .navbar {
   border-bottom: 1px solid #808182;
@@ -115,7 +109,15 @@ h4 {
 h2 {
   text-align: center;
 }
+ul .list {
+  float: left;
 
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+  border: 2px solid #f2f2f2;
+}
 .registration {
   text-align: center;
 }
@@ -123,7 +125,9 @@ h2 {
 .carousel .item {
   height: 400px;
 }
-
+.carousel .photo{
+  height: 250px;
+}
 .item img {
   position: relative;
   top: 0;
@@ -188,60 +192,65 @@ h2 {
   font-family: 'Monda', sans-serif;
   padding: 10px 50px;
   font-size: 20px;
-=======
-body {
-font-family: $Raleway;
-font-size: 18px;
 }
+  body {
+    font-family: $Raleway;
+    font-size: 18px;
+  }
 
-.navbar {
-border-bottom: 1px solid #808182;
-padding: 4px;
-box-shadow: 0px 1px 2px #ffe6e6;
-}
+  .navbar {
+    border-bottom: 1px solid #808182;
+    padding: 4px;
+    box-shadow: 0 1px 2px #ffe6e6;
+  }
 
-.navbar {
-text-align: center;
-}
+  .navbar {
+    text-align: center;
+  }
 
-.navbar img {
-height: 70px;
-width: 80px;
-}
+  .navbar img {
+    height: 70px;
+    width: 80px;
+  }
 
-.main {
-padding: 50px;
-text-align: center;
-}
+  .main {
+    padding: 50px;
+    text-align: center;
+  }
 
-.navbar a {
-text-decoration: none;
-}
-h1{
-text-align: center;
-}
-h2{
-text-align: center;
-}
-.signup{
-background-color: #15c10f;
-float: right;
-}
+  .navbar a {
+    text-decoration: none;
+  }
 
-ul {
-list-style-type: none;
-}
-li{
-display: inline;
-}
-.info{
-float: right;
-}
-footer{
-text-align: center;
-padding-top: 300px;
-}
-#foot{
-padding-right: 50px;
->>>>>>> 5f45635d9431d7393a421a8654dd7460e0e8c2fa
-}
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .signup {
+    background-color: #15c10f;
+    float: right;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .info {
+    float: right;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #foot {
+    padding-right: 50px;
+  }

@@ -1,8 +1,11 @@
-{{#each model.user as |user|}}
-  <ul>
-    {{#each model.riders as |rider|}}
-      {{rider-tile rider=rider user=user}}
-    {{/each}}
-  </ul>
-{{/each}}
+<div class="container">
+  {{#each model.user as |user|}}
+    <ul class="list">
+      {{#each model.riders as |rider|}}
+        {{rider-tile rider=rider user=user}}
+      {{/each}}
+    </ul>
+  {{/each}}
+</div>
+
 {{outlet}}
