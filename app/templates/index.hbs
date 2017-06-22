@@ -5,7 +5,7 @@
   <h1> WELCOME TO NDUTHIS </h1>
   <h2> Your RIDE is one click away</h2>
   <div class="form-actions">
-    <button class="btn btn-primary" type="submit">Let's Nduthis</button>
+    <button class="btn btn-primary" type="submit" {{action 'login'}}>Let's Nduthis</button>
   </div>
 </div>
 
@@ -71,12 +71,12 @@
     <div class="col-md-6 reg-rider">
       <h3>Register as</h3>
       <hr>
-      <button class="btn btn-success reg-button">RIDER</button>
+      <button class="btn btn-success reg-button" {{action 'login'}}>RIDER</button>
     </div>
     <div class="col-md-6 reg-user">
       <h3>Register as</h3>
       <hr>
-      <button class="btn btn-success reg-button">USER</button>
+      <button class="btn btn-success reg-button" {{action 'login'}}>USER</button>
 
     </div>
   </div>

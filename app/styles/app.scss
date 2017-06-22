@@ -2,69 +2,75 @@
 @import "ember-modal-dialog/ember-modal-appearance";
 @import "ember-bootstrap/bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
-
-//Font variables
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway); //Font variables
 $Raleway: 'Raleway';
 
 .ember-modal-dialog {
   width: 400px;
   height: 300px;
 }
+
 body {
-font-family: $Raleway;
-font-size: 18px;
+  font-family: $Raleway;
+  font-size: 18px;
 }
 
 .navbar {
-border-bottom: 1px solid #808182;
-padding: 4px;
-box-shadow: 0px 1px 2px #ffe6e6;
+  border-bottom: 1px solid #808182;
+  padding: 4px;
+  box-shadow: 0 1px 2px #ffe6e6;
 }
 
 .navbar {
-text-align: center;
+  text-align: center;
 }
 
 .navbar img {
-height: 70px;
-width: 80px;
+  height: 70px;
+  width: 80px;
 }
 
 .main {
-padding: 50px;
-text-align: center;
+  padding: 50px;
+  text-align: center;
 }
 
 .navbar a {
-text-decoration: none;
+  text-decoration: none;
 }
-h1{
-text-align: center;
+
+h1 {
+  text-align: center;
 }
-h2{
-text-align: center;
+
+h2 {
+  text-align: center;
 }
-.signup{
-background-color: #15c10f;
-float: right;
+
+.signup {
+  background-color: #15c10f;
+  float: right;
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
-li{
-display: inline;
+
+li {
+  display: inline;
 }
-.info{
-float: right;
+
+.info {
+  float: right;
 }
-footer{
-text-align: center;
-padding-top: 300px;
+
+footer {
+  text-align: center;
+  padding-top: 300px;
 }
-#foot{
-padding-right: 50px;
+
+#foot {
+  padding-right: 50px;
+}
 
 .navbar {
   border-bottom: 1px solid #808182;
@@ -238,5 +244,4 @@ h2 {
   font-family: 'Monda', sans-serif;
   padding: 10px 50px;
   font-size: 20px;
->>>>>>> 631ff9805cd19fad59941c6d640c9811567f422a
 }
