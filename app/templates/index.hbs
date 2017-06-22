@@ -1,8 +1,12 @@
  {{outlet}}
-<!--Welcome-txt-->
 <div class="welcome-txt">
   <h1> WELCOME TO NDUTHIS </h1>
   <h2> Your RIDE is one click away</h2>
+
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit" {{action 'login'}}>Let's Nduthis</button>
+  </div>
+
 </div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -53,24 +57,23 @@
   <div class="col-md-3"></div>
 </div>
 
+<!--Register Section-->
+<div class="register">
+  <div class="reg-head">
+    <h1>Are you REGISTERED?</h1>
+    <h5><i>HINT: You'll have to log in first!</i></h5>
+  </div>
+  <div class="row" style="margin-left:0;margin-right:0">
+    <div class="col-md-6 reg-rider">
+      <h3>Register as</h3>
+      <hr>
+      <button class="btn btn-success reg-button" {{action 'login'}}>RIDER</button>
+    </div>
+    <div class="col-md-6 reg-user">
+      <h3>Register as</h3>
+      <hr>
+      <button class="btn btn-success reg-button" {{action 'login'}}>USER</button>
 
-
-      <!--Register Section-->
-      <div class="register">
-        <div class="reg-head">
-          <h1>Are you REGISTERED?</h1>
-        </div>
-        <div class="row" style="margin-left:0;margin-right:0">
-          <div class="col-md-6 reg-rider">
-            <h3>Register as</h3>
-            <hr>
-            {{#link-to 'login'}}<button class="btn btn-success reg-button">RIDER</button>{{/link-to}}
-          </div>
-          <div class="col-md-6 reg-user">
-            <h3>Register as</h3>
-            <hr>
-            <button class="btn btn-success reg-button">USER</button>
-
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
