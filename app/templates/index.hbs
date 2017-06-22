@@ -1,10 +1,9 @@
-{{outlet}}
 <!--Welcome-txt-->
 <div class="welcome-txt">
   <h1> WELCOME TO NDUTHIS </h1>
   <h2> Your RIDE is one click away</h2>
   <div class="form-actions">
-    <button class="btn btn-primary" type="submit">Let's Nduthis</button>
+    <button class="btn btn-primary" type="submit" {{action 'login'}}>Let's Nduthis</button>
   </div>
 </div>
 
@@ -43,58 +42,54 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <div class="container-fluid about">
   <div class="row">
     <div class="col-md-9">
       <h4>About Nduthis</h4>
-      <p> Nduthis was created by a young vibrant team led by Chris Nyaga and other developers: Victor Allen, Isaac Onyango and Deborah Nasireyi. The idea came about by examining the market where there are many car based services but almost none that deals
-        with purely motorcycles so we </p>
+      <p> Nduthis was created by a young vibrant team led by Chris Nyaga and other developers: Victor Allen, Isaac Onyango and Deborah Nasireyi. The idea came about by examining the market where there are many car based services but almost none that deals with purely motorcycles so we saw the gap and decided to exploit it. This web app will enable users to be able to select a rider for transport at their own convenience rather than look for one manually. </p>
 
     </div>
-    <div class="col-md-3">
-    </div>
+    <div class="col-md-3"></div>
   </div>
 </div>
-<h2> Your adventure is one click away. Let's Nduthis!!!</h2>
-<h2>Login to continue.</h2>
 
 <!--Register Section-->
 <div class="register">
   <div class="reg-head">
     <h1>Are you REGISTERED?</h1>
+    <h5><i>HINT: You'll have to log in first!</i></h5>
   </div>
   <div class="row" style="margin-left:0;margin-right:0">
     <div class="col-md-6 reg-rider">
       <h3>Register as</h3>
       <hr>
-      <button class="btn btn-success reg-button">RIDER</button>
+      <button class="btn btn-success reg-button" {{action 'login'}}>RIDER</button>
     </div>
     <div class="col-md-6 reg-user">
       <h3>Register as</h3>
       <hr>
-      <button class="btn btn-success reg-button">USER</button>
-    </div>
-  </div>
-</div>
+      <button class="btn btn-success reg-button" {{action 'login'}}>USER</button>
 
-<div class="subscribe">
-  <form>
-    <div class="form-group">
-      <div class="row">
-        <div class="col-md-2">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="name">
-        </div>
+      <div class="subscribe">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="name">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="email">
+              </div>
+            </div>
+          </div>
+        </form>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
       </div>
     </div>
-    <div class="form-group">
-      <div class="row">
-        <div class="col-md-2">
-          <label for="email">Email</label>
-          <input type="text" class="form-control" id="email" placeholder="email">
-        </div>
-      </div>
-    </div>
-  </form>
-  <button class="btn btn-primary" type="submit">Subscribe</button>
-</div>
