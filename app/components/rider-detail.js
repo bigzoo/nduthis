@@ -18,7 +18,7 @@ export default Ember.Component.extend({
         to: this.get('to'),
         amountCharged:''
       };
-      this.sendAction('newRide',params);
+       this.sendAction('newRide',params);
     }
   }
 });
