@@ -1,3 +1,6 @@
+{{#each model as |user|}}
+{{user.name}}
+{{/each}}
 {{#if session.data.authenticated.profile.email_verified}}
 Your email is verified
 {{link-to "Proceed with registration" 'register'}}
