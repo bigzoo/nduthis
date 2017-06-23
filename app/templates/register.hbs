@@ -2,19 +2,24 @@
   <div class="reg-head">
     <h1>Are you REGISTERED?</h1>
     <h5><i>HINT: You'll have to log in first!</i></h5>
+
   </div>
   <div class="row" style="margin-left:0;margin-right:0">
     <div class="col-md-6 reg-rider">
       <h3>Register as</h3>
       <hr>
+      {{new-rider registerNewRider="registerNewRider"}}
+      <!-- <button class="btn btn-success reg-button">RIDER</button> -->
       {{new-user registerNewUser="registerNewUser"}}
     </div>
-    <div class="col-md-6 reg-user">
+    <!-- <div class="col-md-6 reg-user">
       <h3>Register as</h3>
       <hr>
-      {{new-rider registerNewRider="registerNewRider"}}
-
+      <button class="btn btn-success reg-button">USER</button>
+      {{new-user registerNewUser="registerNewUser"}}
     </div>
+     -->
   </div>
 </div>
+
 {{outlet}}

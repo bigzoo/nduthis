@@ -9,7 +9,8 @@
       <th>Clients Destination</th>
       <th>Clients Name</th>
       <th>Clients email</th>
-    </tr>
+      <th>Clients Contact </th>
+  </tr>
   </thead>
   <tbody>
     {{#each model.rider as |rider|}}
@@ -18,6 +19,7 @@
           <td>{{ride.to}}</td>
           <td>{{ride.user.name}}</td>
           <td>{{ride.user.email}}</td>
+          <td>{{ride.user.number}}</td>
         </tr>
       {{/each}}
     {{/each}}
