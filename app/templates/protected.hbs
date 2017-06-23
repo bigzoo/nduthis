@@ -1,16 +1,21 @@
-<h2>Congratulations you are one step closer to starting your journey!!!</h2>
-<div class="container gif">
-  <img src="https://media.giphy.com/media/QZEdQgrlgOjcY/giphy.gif">
-</div>
-
-<br>
-<div class="container registration">
+<!-- {{#each model as |user|}}
+{{user.name}}
+{{/each}}
 {{#if session.data.authenticated.profile.email_verified}}
 Your email is verified
 {{link-to "Proceed with registration" 'register'}}
+<br>
+{{link-to "Book A Nduthi" 'book'}}
+<br>
+{{link-to "User Dashboard" 'dashboard.user'}}
+<br>
+{{link-to "Rider Dashboard" 'dashboard.rider'}}
+<br>
 {{else}}
 Your email is not verified
-<br>
-Please first verify you email and log back into your account to proceed with registration.
+<br> Please first verify you email and log back into your account to proceed with registration.
 {{/if}}
-</div>
+<h2>Congratulations you are one step closer to starting your journey!!!</h2>
+<div class="container gif">
+  <img src="https://media.giphy.com/media/QZEdQgrlgOjcY/giphy.gif">
+</div> -->

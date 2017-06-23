@@ -7,7 +7,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     return Ember.RSVP.hash({
       riders: this.store.query('rider',{
         orderBy:'status',
-        equalTo:'available'
+        equalTo:true
       }),
       user:this.store.query('user',{
         orderBy:'email',
