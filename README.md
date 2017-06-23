@@ -1,7 +1,7 @@
 # nduthis
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Nduthis application is a website that allows people to go online and book a ride.In order to register either as a user or a rider you need to login to the application first.
 
 ## Prerequisites
 
@@ -39,7 +39,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+1.To deploy your app on heroku, you are first required to have an account on heroku.If you dont have one,then create one.
+2.After that, follow this link http://bit.ly/2smdegj to create a ember build pack for your project.
+3.Enter the details required and heroku automatically generates a build pack for you.
+4.Naviagte to manage apps and click on deploy.Select the deployment method and allow heroku to authorise your github account.
+5.select the project you want to deploy.
+6.Click on connect then deploy branch.
+7.Wait for the build log to finish ,after completion you will see an option to view your app.
 
 ## Further Reading / Useful Links
 
@@ -48,3 +54,9 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+Authors
+  The people who came up with this project include: Chris Nyaga,Isaac Onyango,Victor Allen and Deborah Nasireyi.
+  
+ License
+  This project is licensed under the MIT license.
