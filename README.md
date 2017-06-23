@@ -1,7 +1,7 @@
 # nduthis
 
 This README outlines the details of collaborating on this Ember application.
-Nduthis application is a website that allows people to go online and book a ride.In order to register either as a user or a rider you need to login to the application first.
+Nduthis application is an application that mimicks the Uber service in kenya but mostly targets the motorcycles(nduthis.).In order to be able to use this application,you first have to login to the application and register either as a user or a rider.
 
 ## Prerequisites
 
