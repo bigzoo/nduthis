@@ -2,6 +2,7 @@
 @import "ember-modal-dialog/ember-modal-appearance";
 @import "ember-bootstrap/bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
+
 $Raleway: 'Raleway';
 
 .ember-modal-dialog {
@@ -52,7 +53,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+ul li {
   display: inline;
 }
 
@@ -153,13 +154,14 @@ footer {
 .horizontal-foot {
   width: 50%;
 }
-
+// border-color: #77a9f9;
 .about {
-  height: 250px;
   border: 1px solid #808182;
   margin-top: 10px;
   box-shadow: 5px 5px 5px 5px;
   margin-bottom: 5px;
+  padding: 40px;
+  background-color: #fff;
 }
 
 h4 {
@@ -211,7 +213,7 @@ h5 {
   font-size: 55px;
 }
 
-.form-actions {
+.form-actions{
   text-align: center;
 }
 
@@ -374,4 +376,30 @@ input:checked + .slider:before {
 
 #book-btn{
   float: right;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+.email{
+  display: inline-block;
+  width: 500px;
+}
+.center{
+  text-align: center;
+  font-family: 'Monda',sans-serif;
+}
+.carousel .item {
+  height: 400px;
+}
+
+.item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 500px;
 }
