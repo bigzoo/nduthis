@@ -72,54 +72,6 @@ footer {
   padding-right: 50px;
 }
 
-.navbar {
-  border-bottom: 1px solid #808182;
-  padding: 4px;
-  box-shadow: 0 1px 2px #ffe6e6;
-}
-
-.navbar {
-  text-align: center;
-}
-
-.navbar img {
-  height: 70px;
-  width: 80px;
-}
-
-.main {
-  padding: 50px;
-  text-align: center;
-}
-
-.navbar a {
-  text-decoration: none;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-.signup {
-  background-color: #15c10f;
-  float: right;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-}
-
-.info {
-  float: right;
-}
 /*Footer*/
 footer {
   padding: 20px;
@@ -229,7 +181,7 @@ h5 {
 }
 
 .reg-head h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Monda', sans-serif;
 }
 
@@ -259,64 +211,55 @@ h5 {
   font-size: 20px;
 }
 
-body {
-  font-family: $Raleway;
-  font-size: 18px;
+<
+/**Button to Top**/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgb(92, 184, 92) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
-
-.navbar {
-  border-bottom: 1px solid #808182;
-  padding: 4px;
-  box-shadow: 0 1px 2px #ffe6e6;
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
 }
-
-.navbar {
-  text-align: center;
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
 }
-
-.navbar img {
-  height: 70px;
-  width: 80px;
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
 }
-
-.main {
-  padding: 50px;
-  text-align: center;
+.no-touch .cd-top:hover {
+  background-color: rgba(0, 121, 95,0.7);
+  opacity: 1;
 }
-
-.navbar a {
-  text-decoration: none;
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
 }
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-.signup {
-  background-color: #15c10f;
-  float: right;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-}
-
-.info {
-  float: right;
-}
-
-footer {
-  text-align: center;
-}
-
-#foot {
-  padding-right: 50px;
-}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
