@@ -1,3 +1,4 @@
+
 Choose one of our highly vetted and trained Riders and start your journey today!
 
 <div class="container">
@@ -9,5 +10,14 @@ Choose one of our highly vetted and trained Riders and start your journey today!
     </ul>
   {{/each}}
 </div>
+
+
+{{#each model.user as |user|}}
+  <ul>
+    {{#each model.riders as |rider|}}
+      {{rider-tile rider=rider user=user}}
+    {{/each}}
+  </ul>
+{{/each}}
 
 {{outlet}}

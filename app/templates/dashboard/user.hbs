@@ -1,5 +1,5 @@
 {{outlet}}
-<h1>This is {{#each model.user as |user|}}{{user.name}}{{/each}}'s Dashboard</h1>
+<h1>This is {{#each model.user as |user|}}{{user.name}}{{/each}}'s Dashboard{{link-to "Book A Nduthi" 'book' class="btn btn-success" id="book-btn"}}</h1>
 <table class="table table-hover">
   <thead>
     <tr>
