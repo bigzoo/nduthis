@@ -1,12 +1,16 @@
 {{outlet}}
-<h1>This is {{#each model.rider as |rider|}}{{rider.name}}{{/each}}'s Dashboard</h1>
+{{#each model.rider as |rider|}}
+{{update-status rider=rider updateStatus1="updateStatus2"}}
+<h1>This is {{rider.name}}'s Dashboard</h1>
+{{/each}}
 <table class="table table-hover">
   <thead>
     <tr>
       <th>Clients Destination</th>
       <th>Clients Name</th>
       <th>Clients email</th>
-    </tr>
+      <th>Clients Contact </th>
+  </tr>
   </thead>
   <tbody>
     {{#each model.rider as |rider|}}
@@ -15,6 +19,7 @@
           <td>{{ride.to}}</td>
           <td>{{ride.user.name}}</td>
           <td>{{ride.user.email}}</td>
+          <td>{{ride.user.number}}</td>
         </tr>
       {{/each}}
     {{/each}}

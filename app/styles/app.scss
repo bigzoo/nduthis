@@ -2,6 +2,7 @@
 @import "ember-modal-dialog/ember-modal-appearance";
 @import "ember-bootstrap/bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans|Overpass|Raleway);
+
 $Raleway: 'Raleway';
 
 .ember-modal-dialog {
@@ -42,9 +43,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-}
 
 .signup {
   background-color: #15c10f;
@@ -55,7 +53,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+ul li {
   display: inline;
 }
 
@@ -156,12 +154,14 @@ footer {
 .horizontal-foot {
   width: 50%;
 }
-
+// border-color: #77a9f9;
 .about {
-  height: 250px;
   border: 1px solid #808182;
   margin-top: 10px;
-  box-shadow: 2px 5px 5px 2px;
+  box-shadow: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  padding: 40px;
+  background-color: #fff;
 }
 
 h4 {
@@ -171,6 +171,11 @@ h4 {
 h2 {
   text-align: center;
 }
+
+ul .list {
+  float: left;
+}
+
 h5 {
   text-align: center;
 }
@@ -178,9 +183,14 @@ h5 {
 .registration {
   text-align: center;
 }
+
 /*carousel display size*/
 .carousel .item {
   height: 400px;
+}
+
+.carousel .photo {
+  height: 250px;
 }
 
 .item img {
@@ -203,7 +213,7 @@ h5 {
   font-size: 55px;
 }
 
-.form-actions {
+.form-actions{
   text-align: center;
 }
 
@@ -248,6 +258,8 @@ h5 {
   padding: 10px 50px;
   font-size: 20px;
 }
+
+
 
 /**Button to Top**/
 .cd-top {
@@ -300,4 +312,94 @@ h5 {
     right: 30px;
     bottom: 30px;
   }
+}
+//Toggle switch styling.
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#book-btn{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+.email{
+  display: inline-block;
+  width: 500px;
+}
+.center{
+  text-align: center;
+  font-family: 'Monda',sans-serif;
+}
+.carousel .item {
+  height: 400px;
+}
+
+.item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 500px;
 }

@@ -9,5 +9,16 @@ export default Ember.Route.extend({
         equalTo: this.get('session.data.authenticated.profile.email')
       })
     })
+  },
+  actions:{
+    updateStatus2(rider,params){
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          rider.set(key,params[key]);
+        }
+      });
+      rider.save();
+      this.transitionTo('dashboard.rider');
+    }
   }
 });

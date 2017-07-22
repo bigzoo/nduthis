@@ -2,23 +2,25 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   inRide: false,
-  session:Ember.inject.service(),
-  actions:{
-    cancel(){
-      this.set('inRide',false),
-      this.set('to','')
+  session: Ember.inject.service(),
+  actions: {
+    cancel() {
+      this.set('inRide', false),
+        this.set('to', '')
     },
-    showNewRide(){
-      this.set('inRide',true)
+    showNewRide() {
+      this.set('inRide', true)
     },
-    newRide(){
+    newRide() {
       var params = {
         user: this.get('user'),
         rider: this.get('rider'),
         to: this.get('to'),
-        amountCharged:''
+        amountCharged: ''
       };
-       this.sendAction('newRide',params);
+      this.set('inRide', false);
+      this.sendAction('newRide', params);
+      //this.transitionTo('dashboard.user');
     }
   }
 });

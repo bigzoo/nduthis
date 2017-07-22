@@ -8,6 +8,10 @@
     <label for="formGroupExampleInput">Full Names</label>
     {{input type="text" class="form-control" id="name" value=name placeholder="Enter your full names"}}
   </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Valid Phone Number</label>
+    {{input type="number" class="form-control" id="number" value=number placeholder="Enter Your Phone Number"}}
+  </div>  
   <fieldset disabled>
     <div class="form-group">
     <label for="formGroupExampleInput">Email address</label>
@@ -19,6 +23,6 @@
   <button class="btn btn-submit" {{action 'cancelForm'}}>Cancel</button>
 </form>
 {{else}}
-<button class="btn btn-submit" {{action 'addNewUser'}}>Add a new user</button>
+<button class="btn btn-success reg-button" {{action 'addNewUser'}}>USER</button>
 {{/if}}
 {{yield}}
