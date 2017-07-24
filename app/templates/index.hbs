@@ -1,12 +1,14 @@
-<h2> Your adventure is one click away. Let's Nduthis!!!</h2>
-<h2>Login to continue.</h2> {{outlet}}
+ {{outlet}}
 <!--Welcome-txt-->
+
 <div class="welcome-txt">
   <h1> WELCOME TO NDUTHIS </h1>
   <h2> Your RIDE is one click away</h2>
+
   <div class="form-actions">
     <button class="btn btn-primary" type="submit" {{action 'login'}}>Let's Nduthis</button>
   </div>
+
 </div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -45,18 +47,14 @@
     </a>
 </div>
 
-<div class="container-fluid about">
-  <div class="row">
-    <div class="col-md-9">
+<div class="container-fluid about ">
+    <div class="center">
       <h4>About Nduthis</h4>
       <p> Nduthis was created by a young vibrant team led by Chris Nyaga and other developers: Victor Allen, Isaac Onyango and Deborah Nasireyi. The idea came about by examining the market where there are many car based services but almost none that deals
-        with purely motorcycles so we saw the gap and decided to exploit it. This web app will enable users to be able to select a rider for transport at their own convenience rather than look for one manually. </p>
-
+        with purely motorcycles so we saw the gap and decided to exploit it. Also most do not offer a web based solution. This web app will enable users to be able to select an available rider for transport at their own convenience rather than look for one manually. </p>
     </div>
-    <div class="col-md-3"></div>
-  </div>
-</div>
 
+</div>
 
 <!--Register Section-->
 <div class="register">
@@ -74,7 +72,6 @@
       <h3>Register as</h3>
       <hr>
       <button class="btn btn-success reg-button" {{action 'login'}}>USER</button>
-
     </div>
   </div>
 </div>

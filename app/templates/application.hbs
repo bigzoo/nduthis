@@ -1,29 +1,48 @@
-<h1 id="title">Welcome to Nduthis</h1>
 <div class="container-fluid navbar">
-  <nav>
+  <nav class="">
     <ul>
-      <li>{{link-to "Home Page" 'protected'}}</li>
-      <li>
-        {{#link-to 'index'}}<img class="text-center" src="img/Logo2.png">{{/link-to}}
+      <li class="float-left">
+        {{#link-to 'index'}}<img class="text-center" src="./../img/Logo2.png">{{/link-to}}
       </li>
-      <li>
-        {{#if session.isAuthenticated}}
-          <h3>You are currently logged as: {{session.data.authenticated.profile.email}}</h3>
-          <a href="#" {{action 'logout'}}>Logout</a>
-        {{else}}
-          <a href="#" {{action 'login'}}>Login</a>
-        {{/if}}
-      </li>
+      <li class="float-left navbar-brand"><h2>{{link-to "NDUTHIS" 'protected'}}</h2></li>
+      {{#if session.isAuthenticated}}
+        <li class="float-right">You are currently logged as: {{session.data.authenticated.profile.email}} <a href="#" {{action 'logout'}}>Logout</a></li>
+      {{else}}
+        <li class="float-right"><a href="#" {{action 'login'}}>Login</a></li>
+
+      {{/if}}
     </ul>
   </nav>
 </div>
 {{outlet}}
-
 <!--Footer-->
-
 <footer>
+
+  <div class="subscribe">
+    {{#if subscribed}}
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="email">
+              <label for="email">Email</label>
+              <div class="center-txt">
+                {{input type="email" class="form-control" id="email" value=email placeholder="Enter your email" }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <button {{action 'subscribe'}} class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    {{else}}
+      <div class="row">
+        <div>
+          <h2>Thanks for subscribing!</h2>
+        </div>
+      </div>
+    {{/if}}
+  </div>
   <div class="foot-logo img-responsive">
-    <img src="img/Logo2.png">
+    <img src="./../img/Logo2.png">
     <h3>Nduthis</h3>
     <hr class="horizontal-foot">
   </div>
@@ -43,3 +62,6 @@
   </div>
   <p> &copy;The Nduthis Team </p>
 </footer>
+
+<!--Back to Top Button-->
+<a href="#0" class="cd-top">Top</a>
